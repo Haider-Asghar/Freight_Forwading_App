@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- File shape -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M6,2h9l5,5v13a2,2 0 0,1 -2,2H6a2,2 0 0,1 -2,-2V4a2,2 0 0,1 2,-2z"/>
+
+    <!-- Fold corner -->
+    <path
+        android:fillColor="#FFCDD2"
+        android:pathData="M15,2v5h5z"/>
+
+    <!-- PDF Text -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M7,17h1.5c0.8,0 1.5,-0.6 1.5,-1.5S9.3,14 8.5,14H7v3zm1.5,-1.5c0,0.3 -0.2,0.5 -0.5,0.5H8v-1h0.5c0.3,0 0.5,0.2 0.5,0.5z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11,14h1.5c0.8,0 1.5,0.6 1.5,1.5S13.3,17 12.5,17H11v-3zm1.5,1.5c0,-0.3 -0.2,-0.5 -0.5,-0.5H12v1h0.5c0.3,0 0.5,-0.2 0.5,-0.5z"/>
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15,14h2v1h-1v0.5h1v1h-1V18h-1z"/>
+
+</vector>

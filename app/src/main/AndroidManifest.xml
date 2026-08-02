@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FT"
+        tools:targetApi="31">
+        <activity
+            android:name=".Chat_Bot"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".Chat_Select"
+            android:exported="false" />
+        <activity
+            android:name=".Scanner_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Tracking_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedBack_Review"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Do"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Do"
+            android:exported="false" />
+        <activity
+            android:name=".Pdf_Preview"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Invoices"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Invoices"
+            android:exported="false" />
+        <activity
+            android:name=".View_Statuses"
+            android:exported="false" />
+        <activity
+            android:name=".View_Status"
+            android:exported="false" />
+        <activity
+            android:name=".Status_Updates"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".About_Us"
+            android:exported="false" />
+        <activity
+            android:name=".Update_Client_Profile"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Client_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Image_Preview_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Chat_Activity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Admin_Chats"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Chats"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Select_AirRates"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Rates_Query"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Remove_Rates"
+            android:exported="false" />
+        <activity
+            android:name=".Remove_City"
+            android:exported="false" />
+        <activity
+            android:name=".Remove_Country"
+            android:exported="false" />
+        <activity
+            android:name=".Update_Rates"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Add_Rates"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Add_Country"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Rates_Manager"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Admin"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Client_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_Up"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Client_Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

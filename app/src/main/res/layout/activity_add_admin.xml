@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgdpic"
+    tools:context=".Add_Admin">
+
+    <ScrollView
+        android:id="@+id/svAddAdmin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp" >
+
+            <TextView
+                android:id="@+id/tvAddAdmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Add an Admin"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminNameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="Admin Name"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/tvAddAdmin"
+                app:layout_constraintStart_toStartOf="@+id/tvAddAdmin"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddAdmin"
+                app:startIconDrawable="@drawable/baseline_account_box_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminEmailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Admin Email"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/adminNameLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminNameLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminNameLayout"
+                app:placeholderText="abc@gmail.com"
+                app:startIconDrawable="@drawable/baseline_email_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminDesignationLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Admin Designation"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/adminEmailLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminEmailLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminEmailLayout"
+                app:startIconDrawable="@drawable/baseline_account_box_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminDesignation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminContactNoLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Admin Contact Number"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/adminDesignationLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminDesignationLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminDesignationLayout"
+                app:placeholderText="03000000000"
+                app:startIconDrawable="@drawable/baseline_call_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminCnicNoLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Admin Cnic Number"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:layout_constraintEnd_toEndOf="@+id/adminContactNoLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminContactNoLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminContactNoLayout"
+                app:placeholderText="0000000000000"
+                app:startIconDrawable="@drawable/baseline_call_to_action_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminCnicNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="13"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="@+id/adminCnicNoLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminCnicNoLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminCnicNoLayout"
+                app:startIconDrawable="@drawable/baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/adminConfirmPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="Confirm Password"
+                app:boxStrokeColor="@color/blue"
+                app:cursorColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="password_toggle"
+                app:layout_constraintEnd_toEndOf="@+id/adminPasswordLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminPasswordLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminPasswordLayout"
+                app:startIconDrawable="@drawable/baseline_lock_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminconfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnAddAdmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="@color/blue"
+                android:text="Add Admin"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/adminConfirmPasswordLayout"
+                app:layout_constraintStart_toStartOf="@+id/adminConfirmPasswordLayout"
+                app:layout_constraintTop_toBottomOf="@+id/adminConfirmPasswordLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

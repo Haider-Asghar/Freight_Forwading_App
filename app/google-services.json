@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "726723320131",
+    "project_id": "ftdb-7ff39",
+    "storage_bucket": "ftdb-7ff39.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726723320131:android:3a1d666b1fe16bf4bff7f6",
+        "android_client_info": {
+          "package_name": "com.example.ft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByJARdZo_fHYa3LqfbBnslMnMGv2DTxoU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

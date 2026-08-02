@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FT</string>
+    <string name="rates_nquotes"><![CDATA[Rates &\nQuotes]]></string>
+    <string name="country">Add Country &amp; City</string>
+</resources>

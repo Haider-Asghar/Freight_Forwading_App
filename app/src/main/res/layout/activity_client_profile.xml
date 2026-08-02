@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgdpic"
+    tools:context=".Client_Profile">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_clientProfile"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:id="@+id/img_ivBackClientProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/baseline_arrow_back_ios_24"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/tv_ClientProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile Management"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_updateClientProfile"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/outline_border"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_updateClientProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update Profile"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/img_updateClientProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_changeClientPassword"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/outline_border"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_changeClientPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/img_changeClientPassword"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_clientFeedBack"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/outline_border"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_clientFeedBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review and FeedBack"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/img_clientFeedBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_clientAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/outline_border"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_clientAboutUs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"/>
+
+                <ImageView
+                    android:id="@+id/img_clientAboutUs"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/baseline_arrow_forward_ios_24" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_clientLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:padding="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/outline_border"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/img_clientLogOut"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/blue"
+                    app:srcCompat="@drawable/baseline_logout_24"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:id="@+id/tv_clientLogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log Out"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/img_clientLogOut"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

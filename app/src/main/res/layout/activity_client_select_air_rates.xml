@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkgdpic"
+    tools:context=".Client_Select_AirRates">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvSelectClientRatesHeader"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardElevation="8dp"
+        android:layout_marginTop="24dp"
+        app:shapeAppearanceOverlay="@style/BottomRoundedCardShape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvTransportSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Rates"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTypeSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="6dp"
+                android:text="Import"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTransportSelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvCountrySelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="China"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvTypeSelectClientRates"
+                app:layout_constraintTop_toTopOf="@+id/tvTypeSelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvCitySelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shenzen"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvTypeSelectClientRates"
+                app:layout_constraintTop_toBottomOf="@+id/tvTypeSelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvCargoTypeSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-DG Goods"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvCountrySelectClientRates"
+                app:layout_constraintTop_toTopOf="@+id/tvCitySelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvWeightSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="29 Kg"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvCitySelectClientRates"
+                app:layout_constraintTop_toBottomOf="@+id/tvCitySelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvServiceTermSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ex-Work"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvCargoTypeSelectClientRates"
+                app:layout_constraintTop_toTopOf="@+id/tvWeightSelectClientRates" />
+
+            <TextView
+                android:id="@+id/tvContainerTypeSelectClientRates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FCL"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tvWeightSelectClientRates"
+                app:layout_constraintTop_toBottomOf="@+id/tvWeightSelectClientRates" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/svSelectClientRates"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/navBarSelectClientRates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvSelectClientRatesHeader">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navBarSelectClientRates"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnSelectClientRates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:layout_marginHorizontal="29dp"
+            android:textSize="25sp"
+            android:text="Create Job"
+            android:enabled="false"
+            android:alpha="0.4"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

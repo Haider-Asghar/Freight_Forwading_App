@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Chat_Activity">
+
+    <include layout="@layout/chat_header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessagesAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="45dp"
+            android:maxHeight="120dp"
+            android:gravity="top|start"
+            android:background="@drawable/bg_input"
+            android:hint="Type a message"
+            android:padding="10dp"
+            android:maxLines="4"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:overScrollMode="always" />
+
+        <ImageView
+            android:id="@+id/btnAttach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_attach_file_24"/>
+
+        <ImageView
+            android:id="@+id/btnCamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/baseline_camera_alt_24"/>
+
+        <ImageView
+            android:id="@+id/btnSend"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/baseline_send_24"/>
+    </LinearLayout>
+</LinearLayout>
