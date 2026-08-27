@@ -8,7 +8,7 @@ Firstly we discussed the client side.
 
 After splash screen client views a client login screen.
 
-<img width="150" height="380" alt="Client login" src="https://github.com/user-attachments/assets/1ecd0e73-9bbb-4dc4-a056-9f16bc8e87e5" />
+<img width="200" height="400" alt="Client login" src="https://github.com/user-attachments/assets/1ecd0e73-9bbb-4dc4-a056-9f16bc8e87e5" />
 
 Client attempt the login process using the email and password.
 
