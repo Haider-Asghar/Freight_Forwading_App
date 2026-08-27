@@ -1,42 +1,80 @@
 Freight Forwarding App is an android app. The development language used in this project is Kotlin. Front end design of this app used to xml. Freight forwarding app provides the all over facilities related to the freight forwarding system. It provides the facility from rate related queries to delivery order handling status including real time status updates. It is used to defend the final year project.
 
-1.8.	High-level system components:
-1.8.1.	Secure Login and Authentication
-User Side:
-•	User registration and login.
-•	User manages profile details.
-•	User changes password.
-Admin Side:
-•	Admin login authentication.
-•	Owner can add new admins using a secret key or password.
-•	Admin change their password.
-1.8.2.	Smart Rates and Quote
-•	User asks rate-related queries in real-time.
-•	Rates are provided immediately through the system.
-•	If the user finds rates suitable, they can proceed; otherwise, no further processing occurs.
-1.8.3.	Real-Time Communication Hub
-•	The app provides real-time communication between the user (client) and the admin (freight forwarder) for shipment allocation and unique reference number assignment.
-•	All discussions between user and admin are conducted in real-time chat (similar to WhatsApp).
-1.8.4.	Centralized Rates Manager
-•	Admin manages and updates rates in the database periodically.
-•	Admin adds new countries and their respective rates.
-•	Admin deletes outdated rates or remove countries.
-1.8.5.	AI Assistance and Doc Automation
-•	Includes a document extraction feature that allows users and admin to digitally extract shipment-related documents.
-•	Integrated AI chatbot assists users by providing suggestions for best possible actions when they face confusion or issues.
-1.8.6.	Shipment Tracking and Feedback
-•	User can track shipment after receiving the tracking ID.
-•	The app shows departure and arrival status in real-time.
-•	User can provide feedback and rating the service to evaluate accuracy and performance.
-1.8.7.	Shipment Status Lifecycle
-•	It ensures that every key event in the shipment’s journey from booking to final delivery is accurately tracked, updated, and displayed in real time.
-•	This module allows the admin to update the current stage of a shipment directly within the database (e.g., Booked → Picked Up → In Transit → Departed → Arrived → Delivered).
-•	Each update is immediately synchronized with the user’s interface, ensuring complete visibility and transparency throughout the shipment lifecycle.
-1.8.8.	Payment and Delivery Order (D/O)
-•	Admin uploads the invoice after shipment processing.
-•	User views the invoice and deposits payment into the provided bank account.
-•	Once payment is received, the admin issues the Delivery Order (D/O).
-•	User checks the D/O status through the app.
+# 1	High-level system components:
+  
+ # 1.1.	Secure Login and Authentication
+  User Side:
+ 
+ •	User registration and login.
+
+ •	User manages profile details.
+
+ •	User changes password.
+ 
+ Admin Side:
+ 
+ •	Admin login authentication.
+
+ •	Owner can add new admins using a secret key or password.
+
+ •	Admin change their password.
+
+ # 1.2.	Smart Rates and Quote
+
+ •	User asks rate-related queries in real-time.
+
+ •	Rates are provided immediately through the system.
+
+ •	If the user finds rates suitable, they can proceed; otherwise, no further processing occurs.
+
+ # 1.3.	Real-Time Communication Hub
+
+ •	The app provides real-time communication between the user (client) and the admin (freight forwarder) for shipment allocation and      
+   unique reference number assignment.
+
+ •	All discussions between user and admin are conducted in real-time chat (similar to WhatsApp).
+
+ # 1.4.	Centralized Rates Manager
+
+ •	Admin manages and updates rates in the database periodically.
+
+ •	Admin adds new countries and their respective rates.
+
+ •	Admin deletes outdated rates or remove countries.
+
+ # 1.5.	AI Assistance and Doc Automation
+
+ •	Includes a document extraction feature that allows users and admin to digitally extract shipment-related documents.
+
+ •	Integrated AI chatbot assists users by providing suggestions for best possible actions when they face confusion or issues.
+
+ # 1.6.	Shipment Tracking and Feedback
+
+ •	User can track shipment after receiving the tracking ID.
+
+ •	The app shows departure and arrival status in real-time.
+
+ •	User can provide feedback and rating the service to evaluate accuracy and performance.
+
+ # 1.7.	Shipment Status Lifecycle
+
+ •	It ensures that every key event in the shipment’s journey from booking to final delivery is accurately tracked, updated, and displayed    in real time.
+
+ •	This module allows the admin to update the current stage of a shipment directly within the database (e.g., Booked → Picked Up → In 
+   Transit → Departed → Arrived → Delivered).
+
+ •	Each update is immediately synchronized with the user’s interface, ensuring complete visibility and transparency throughout the     
+   shipment lifecycle.
+
+ # 1.8.	Payment and Delivery Order (D/O)
+
+ •	Admin uploads the invoice after shipment processing.
+
+ •	User views the invoice and deposits payment into the provided bank account.
+
+ •Once payment is received, the admin issues the Delivery Order (D/O).
+
+ •	User checks the D/O status through the app.
 
 
 Open the app after splash screen app display a login screen.
