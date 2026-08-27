@@ -1,5 +1,44 @@
 Freight Forwarding App is an android app. The development language used in this project is Kotlin. Front end design of this app used to xml. Freight forwarding app provides the all over facilities related to the freight forwarding system. It provides the facility from rate related queries to delivery order handling status including real time status updates. It is used to defend the final year project.
 
+1.8.	High-level system components:
+1.8.1.	Secure Login and Authentication
+User Side:
+•	User registration and login.
+•	User manages profile details.
+•	User changes password.
+Admin Side:
+•	Admin login authentication.
+•	Owner can add new admins using a secret key or password.
+•	Admin change their password.
+1.8.2.	Smart Rates and Quote
+•	User asks rate-related queries in real-time.
+•	Rates are provided immediately through the system.
+•	If the user finds rates suitable, they can proceed; otherwise, no further processing occurs.
+1.8.3.	Real-Time Communication Hub
+•	The app provides real-time communication between the user (client) and the admin (freight forwarder) for shipment allocation and unique reference number assignment.
+•	All discussions between user and admin are conducted in real-time chat (similar to WhatsApp).
+1.8.4.	Centralized Rates Manager
+•	Admin manages and updates rates in the database periodically.
+•	Admin adds new countries and their respective rates.
+•	Admin deletes outdated rates or remove countries.
+1.8.5.	AI Assistance and Doc Automation
+•	Includes a document extraction feature that allows users and admin to digitally extract shipment-related documents.
+•	Integrated AI chatbot assists users by providing suggestions for best possible actions when they face confusion or issues.
+1.8.6.	Shipment Tracking and Feedback
+•	User can track shipment after receiving the tracking ID.
+•	The app shows departure and arrival status in real-time.
+•	User can provide feedback and rating the service to evaluate accuracy and performance.
+1.8.7.	Shipment Status Lifecycle
+•	It ensures that every key event in the shipment’s journey from booking to final delivery is accurately tracked, updated, and displayed in real time.
+•	This module allows the admin to update the current stage of a shipment directly within the database (e.g., Booked → Picked Up → In Transit → Departed → Arrived → Delivered).
+•	Each update is immediately synchronized with the user’s interface, ensuring complete visibility and transparency throughout the shipment lifecycle.
+1.8.8.	Payment and Delivery Order (D/O)
+•	Admin uploads the invoice after shipment processing.
+•	User views the invoice and deposits payment into the provided bank account.
+•	Once payment is received, the admin issues the Delivery Order (D/O).
+•	User checks the D/O status through the app.
+
+
 Open the app after splash screen app display a login screen.
 
 Now the app is two sided. First is Client Side and the second is Admin Side.
@@ -52,7 +91,7 @@ If user rates non suitable then stop working no further processing for creating 
 
 Second we discuss the chat module of client side
 
-<img width="200" height=400" alt="Client chats" src="https://github.com/user-attachments/assets/728aea59-4774-4bc3-adb1-3b0ab513c8d9" />
+<img width="200" height="400" alt="Client chats" src="https://github.com/user-attachments/assets/728aea59-4774-4bc3-adb1-3b0ab513c8d9" />
 
 Client side chat module shows the all chat of the client shipments and client is identify every chat of shipment easily just using a reference number.
 
@@ -84,7 +123,7 @@ Customer send the message to AI Assistant and the app automatically response to 
 
 App provides a tracking option. Customer directly track the cargo flight position on real time.
 
- <img width="200" height=400" alt="Tracking number" src="https://github.com/user-attachments/assets/cb2c2abe-6910-4e41-92f9-c8b3e979e13c" />
+ <img width="200" height="400" alt="Tracking number" src="https://github.com/user-attachments/assets/cb2c2abe-6910-4e41-92f9-c8b3e979e13c" />
 
 Customer track the shipment and check the flight arrival and departure status on real time along the airline or sea line tracking on this option.
 
