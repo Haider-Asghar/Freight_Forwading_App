@@ -8,41 +8,43 @@ Firstly we discussed the client side.
 
 After splash screen client views a client login screen.
 
-   # Adding pic client login
+<img width="720" height="1600" alt="Client login" src="https://github.com/user-attachments/assets/1ecd0e73-9bbb-4dc4-a056-9f16bc8e87e5" />
 
 Client attempt the login process using the email and password.
 
 If account is not created then client created an account using the sign up activity 
 
-  # add sign up pic
+<img width="720" height="1600" alt="Sign up" src="https://github.com/user-attachments/assets/14f7e6f4-eaf8-4eab-9ee7-25eb5034e72b" />
 
 Above pic show the sign up process user fill the form and create an account then user attempt the login process and successfully login the app.
 
 After the login user views a dashboard.
 
- # client dashboard
+<img width="720" height="1600" alt="Client dashboard" src="https://github.com/user-attachments/assets/5234b435-dce4-4a7b-925a-641537f75c93" />
 
 Above picture shows the client dashboard.
 
-If user click others icon app shows the all over features.
+If user click others icon, app shows the all over features.
 
-   # adding other icon pic
+<img width="720" height="1600" alt="other icons client" src="https://github.com/user-attachments/assets/68885ffb-9df5-443b-8ec4-8e09bf9aca7f" />
 
 Now we discuss the rate module of client side
 
-  # add rate form pic
+ <img width="720" height="1600" alt="Client ratess" src="https://github.com/user-attachments/assets/680cdfb2-95f6-4f1e-9fac-c8f5b28b53ac" />
 
-Above pic show the rate form user fill the form for the cargo rates. User select the movement mode from own choice i.e. By-Air or By-Sea.
+Above pic show the rate form, user fill the form for the cargo rates. User select the movement mode from own choice i.e. By-Air or By-Sea.
 
 User fill the form and press the calculate button.
 
-Next show rates to the user related from the user details as shown given below
+<img width="720" height="1600" alt="Client rates air" src="https://github.com/user-attachments/assets/23f9d328-6b5d-4a75-add8-f3fe76900071" />
 
- # rates pic
+Next show rates to the user, related from the user details as shown given below
 
-If user rates suitable then user select rates and press create job button. After pressing the button job is created and assign a unique reference number as shown is given below.
+<img width="720" height="1600" alt="Client select rates air" src="https://github.com/user-attachments/assets/f51236d4-ca3a-4905-8c82-13de2c43d794" />
 
-  # pic job number
+If user rates suitable then user select rates and press create job button. After pressing the button, job is created and assign a unique reference number as shown is given below.
+
+ <img width="720" height="1600" alt="Job created" src="https://github.com/user-attachments/assets/1231c512-ad21-4435-9204-f4c8a6ca3fa2" />
 
 Picture  shows the reference number and the same reference number chat is created in chat module.
 
@@ -50,7 +52,7 @@ If user rates non suitable then stop working no further processing for creating 
 
 Second we discuss the chat module of client side
 
- # chat pic 
+<img width="720" height="1600" alt="Client chats" src="https://github.com/user-attachments/assets/728aea59-4774-4bc3-adb1-3b0ab513c8d9" />
 
 Client side chat module shows the all chat of the client shipments and client is identify every chat of shipment easily just using a reference number.
 
@@ -58,7 +60,7 @@ This module provides a real time communication option between client and the adm
 
 The communication is similar to whatsapp communication. User use this module to send messages, images and files to admin in real time.  
 
- # chat pic 
+<img width="720" height="1600" alt="Client chat" src="https://github.com/user-attachments/assets/4f728b3e-9264-453a-ae04-89e8349b7a67" />
 
 Above pic shows the functionality of chat. 
 
